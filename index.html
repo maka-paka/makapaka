@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makapaka Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="blue_flame_favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="blue_flame_favicon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="index.html" class="site-title">makapaka Blog</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#about">プロフィール</a></li>
+                    <li><a href="#blog">ブログ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>漢の情報発信</h2>
+            <p>Welcome to makapaka blog!</p>
+        </div>
+    </section>
+
+    <section class="posts" id="blog">
+        <div class="container">
+            <h2 data-aos="fade-right">new posts</h2>
+            <div class="post">
+                <h3>マカパカブログ 第0章</h3>
+                <p>初めましてとこんにちは</p>
+                <a href="chapter0.html">続きを読む</a>
+            </div>
+            <div class="post">
+                <h3>to be continued...</h3>
+                <p>続報を待て</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 makapakaブログ. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<!-- AOSのCSS（CDN経由） -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- AOSのJavaScript（CDN経由） -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();  // AOSの初期化
+</script>
+
+</html>

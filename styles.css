@@ -1,0 +1,245 @@
+/* ===== 全体のリセット ===== */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== コンテナ ===== */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== ヘッダー ===== */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* ===== ヒーローセクション ===== */
+.hero {
+    background-color: #444;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* ===== 記事セクション ===== */
+.posts {
+    background-color: #fff;
+    padding: 3rem 0;
+    margin-top: 1rem;
+    border-top: 2px solid #444;
+}
+
+.posts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.post {
+    background-color: #f0f0f0;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-left: 5px solid #00bcd4;
+    transition: background-color 0.3s;
+}
+
+.post h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.post p {
+    margin-bottom: 1rem;
+}
+
+.post a {
+    display: inline-block;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* ===== フッター ===== */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* ==========================
+   スマホ向けスタイル (レスポンシブ対応)
+   ========================== */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    /* ヘッダーとナビゲーション */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* ヒーローセクション */
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* 記事セクション */
+    .post {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .post h3 {
+        font-size: 1.2rem;
+    }
+
+    /* フッター */
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* YouTube動画のレスポンシブ対応 */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9のアスペクト比 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 1rem 0; /* 上下にのみ余白を設定 */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* PC向けサイズ調整 */
+@media (min-width: 1024px) {
+    .video-container {
+        margin: 1rem 0;   /* 左右の余白をなくし、上下のみ余白を設定 */
+    }
+}
+
+/* contact 見出しのスタイル */
+.contact-heading {
+    text-align: center;       /* 中央寄せ */
+    font-size: 2.5rem;        /* フォントサイズを大きく */
+    font-weight: bold;        /* 太字にする */
+    color: #00bcd4;           /* 目立つ色（お好みで変更） */
+    margin: 1rem 0;           /* 上下の余白 */
+    text-transform: uppercase; /* すべて大文字にする（任意） */
+}
+
+/* E-mailのスタイル */
+.email {
+    text-align: center;       /* 中央寄せ */
+    font-size: 1.2rem;        /* 適度なフォントサイズ */
+    color: #333;              /* テキスト色 */
+    margin-top: 0.5rem;       /* 上の要素との余白 */
+}
+
+/* E-mailリンクのスタイル */
+.email a {
+    color: #00bcd4;              /* リンクの色 */
+    text-decoration: none;       /* 下線を消す */
+    font-weight: bold;           /* 太字にする */
+    transition: color 0.3s;      /* 色の変化にアニメーションをつける */
+}
+
+.email a:hover {
+    color: #007c91;              /* ホバー時の色を変更 */
+    text-decoration: underline;  /* ホバー時に下線を表示 */
+}
+
+/* タイトルリンクのスタイル */
+.site-title {
+    text-decoration: none;       /* 下線を消す */
+    color: #f0f0f0;              /* 明るいブルー系の色 */
+    font-size: 2rem;             /* フォントサイズを大きく */
+    font-weight: bold;           /* 太字にする */
+    transition: color 0.3s;      /* 色変更のアニメーション */
+}
+
+/* ホバー時のスタイル */
+.site-title:hover {
+    color: #00bcd4;              /* ホバー時にさらに明るいブルー系の色に変更 */
+}
