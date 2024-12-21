@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,85 +9,58 @@
     <link rel="icon" href="blue_flame_favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="blue_flame_favicon.png">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .main {
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
         img {
-            max-width: 100%; /* 親要素に応じた幅に調整 */
-            height: auto;   /* 縦横比を維持 */
-            margin: 20px 0; /* 上下に余白 */
+            max-width: 100%;
+            /* 親要素に応じた幅に調整 */
+            height: auto;
+            /* 縦横比を維持 */
+            margin: 20px 0;
+            /* 上下に余白 */
         }
-        h2 {
-            color: #333;
-        }
-        p {
-            margin: 10px 0;
-        }
+    
         @media (max-width: 600px) {
-            .container {
-                padding: 10px;
+            img {
+                margin: 10px 0; /* スマホで余白を少し小さく */
             }
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>
-                <a href="index.html" class="site-title">makapaka Blog</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="#about">プロフィール</a></li>
-                    <li><a href="#blog">ブログ</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-<section class="main" id="blog">
-    <div class="container">
-        <br>
-        <h2>ドル資産を保有しろ！</h2>
-        <br><br>
-        <p>こんにちは、マカパカブログの筆者のマカパカです。</p>
-        <p>前回がマカパカブログ0章という名の自己紹介だったため本編はここからです。<br>
-            さて、今回はタイトル通りみんな大好きお金のお話です。<br>
-            ドル資産を得ろ！！！これは現代とその先を生き抜くために必要な手段です。<br>
-            日本人の金融リテラシーは低い！とよく言われます。私自身もこれを実感することがありますし、過去の自分なんかがまさにそうでした。<br>
-            「円安？円の数値が大きいと円安なんだよね？」みたいな。。。学生の頃の社会科の授業で習い、それ以上でも以下でもない知識です。<br>
-            言葉の意味をわかった気でいて実態を理解していませんでした。そんな自分も今ではベラベラと他人に金融知識をひけらかすくらいになりました。<br>
-            そうです、2024年。めちゃくちゃ勉強しました。新NISAなんかが流行り、投資ブーム真っ只中でみなさんこういう話、好きなのではないでしょうか。<br>
-            そして今回は金融のお勉強講座ではないので詳しい話は割愛して、ドル資産の重要性について話します。<br>
+<body>
+    <header id="header-include"></header>
+
+    <section class="main" id="blog">
+        <div class="container">
             <br>
-            まずドル資産とは何か。<br>
-            アメリカドル(USD)建てで取引される資産のことです。<br>
-            今回はそれらを保有して世界的なインフレ、歴史的な円安に対抗する、というお話です。<br>
-            最近物の値段が上がっていませんか？これの原因は上述した世界的なインフレ、歴史的な円安の影響です。<br>
-            「円安」とは外貨(海外の通貨)に対して日本円の価値が下がることです。これは日本円が安くなることを意味します。<br>
-            わかりますか？円安の場合はたくさんの円で少しのドルとしか交換できないのです。そして円高はその逆です。<br>
-            1ドル100円だと100000円で1000ドル買えますが、1ドル200円だと100000円で500ドルしか買えません。<br>
-            では実際どれくらいの円安が今起きているのでしょうか？<br>
-            2024年12月現在、1ドルは150円を上回っています。4年前の2020年の100ドルと比べると50%も対ドルで円の価値が減っています。<br>
-            簡単な話、アメリカ人は日本に来た場合に2020年と比較すると現在全員のお金が1.5倍になります。そりゃあ外国人観光客が殺到するわけです。<br>
-            これが為替というものです。日本は島国で隣接する国がないので他国と比べあまり為替を意識する機会は少ないかもしれません<br>
-            ただ、多くの日本の皆さんはiphoneを使ってますよね？これはアメリカの会社が作っている製品です。そのため、アメリカドル建てで取引されています。<br>
-            言ってしまえばドル資産です。iphoneが日本人にとって高くなっているのは円安の影響です。<br>
-            高え高え言われていますがドル建てだと無印モデルは何年も値上げをしていないみたく、アメリカ人からすれば値段は変わっていないみたいですね。<br>
-            <img src="image/ドル円チャート.png" alt="ドル円チャート"><br>
-            <p><h5>⬆️直近5年分のドル円のチャート</h5> ぐんぐんと円の価値が......。</p>
+            <h2>ドル資産を保有しろ！</h2>
+            <br><br>
+            <p>こんにちは、マカパカブログの筆者のマカパカです。</p>
+            <p>前回がマカパカブログ0章という名の自己紹介だったため本編はここからです。<br>
+                さて、今回はタイトル通りみんな大好きお金のお話です。<br>
+                ドル資産を得ろ！！！これは現代とその先を生き抜くために必要な手段です。<br>
+                日本人の金融リテラシーは低い！とよく言われます。私自身もこれを実感することがありますし、過去の自分なんかがまさにそうでした。<br>
+                「円安？円の数値が大きいと円安なんだよね？」みたいな。。。学生の頃の社会科の授業で習い、それ以上でも以下でもない知識です。<br>
+                言葉の意味をわかった気でいて実態を理解していませんでした。そんな自分も今ではベラベラと他人に金融知識をひけらかすくらいになりました。<br>
+                そうです、2024年。めちゃくちゃ勉強しました。新NISAなんかが流行り、投資ブーム真っ只中でみなさんこういう話、好きなのではないでしょうか。<br>
+                そして今回は金融のお勉強講座ではないので詳しい話は割愛して、ドル資産の重要性について話します。<br>
+                <br>
+                まずドル資産とは何か。<br>
+                アメリカドル(USD)建てで取引される資産のことです。<br>
+                今回はそれらを保有して世界的なインフレ、歴史的な円安に対抗する、というお話です。<br>
+                最近物の値段が上がっていませんか？これの原因は上述した世界的なインフレ、歴史的な円安の影響です。<br>
+                「円安」とは外貨(海外の通貨)に対して日本円の価値が下がることです。これは日本円が安くなることを意味します。<br>
+                わかりますか？円安の場合はたくさんの円で少しのドルとしか交換できないのです。そして円高はその逆です。<br>
+                1ドル100円だと100000円で1000ドル買えますが、1ドル200円だと100000円で500ドルしか買えません。<br>
+                では実際どれくらいの円安が今起きているのでしょうか？<br>
+                2024年12月現在、1ドルは150円を上回っています。4年前の2020年の100ドルと比べると50%も対ドルで円の価値が減っています。<br>
+                簡単な話、アメリカ人は日本に来た場合に2020年と比較すると現在全員のお金が1.5倍になります。そりゃあ外国人観光客が殺到するわけです。<br>
+                これが為替というものです。日本は島国で隣接する国がないので他国と比べあまり為替を意識する機会は少ないかもしれません<br>
+                ただ、多くの日本の皆さんはiphoneを使ってますよね？これはアメリカの会社が作っている製品です。そのため、アメリカドル建てで取引されています。<br>
+                言ってしまえばドル資産です。iphoneが日本人にとって高くなっているのは円安の影響です。<br>
+                高え高え言われていますがドル建てだと無印モデルは何年も値上げをしていないみたく、アメリカ人からすれば値段は変わっていないみたいですね。<br>
+                <img src="image/ドル円チャート.png" alt="ドル円チャート"><br>
+            <p>
+            <h5>⬆️直近5年分のドル円のチャート</h5> ぐんぐんと円の価値が......。</p>
             と、ここまでが為替、円安のお話。そして次はインフレのお話です。<br>
             インフレとは物価が上昇することです。これは相対的にお金の価値が下がることを意味します。<br>
             お金の価値は下がり、物の価値は上がります。物とはお金で買えるものです。<br>
@@ -112,43 +86,53 @@
             22歳の人生ペーペーのお話なので参考程度に聞き流してください。<br>
             文字ばかりですみませんでした、以上です。
 
-        </p>
-    </div>
-
-</section>
-
-<section class="posts" id="blog">
-    <div class="container">
-        <h2 data-aos="fade-right">new posts</h2>
-        <div class="post">
-            <h3>マカパカブログ 第0章</h3>
-            <p>初めましてとこんにちは</p>
-            <a href="chapter0.html">続きを読む</a>
+            </p>
         </div>
-        <div class="post">
-            <h3>ドル資産を保有しろ！</h3>
-            <p>chapter1 : 世は大円安時代</p>
-            <a href="chapter1.html">続きを読む</a>
-        </div>
-    </div>
-</section>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2024 makapakaブログ. All Rights Reserved.</p>
-    </div>
-</footer>
-</body>
-<!-- AOSのCSS（CDN経由） -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-<!-- AOSのJavaScript（CDN経由） -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-AOS.init();  // AOSの初期化
-</script>
-<style>
-    header {
-        position: static; /* または relative */
-    }
+    </section>
+
+    <section class="posts" id="blog">
+        <div class="container">
+            <h2 data-aos="fade-right">new posts</h2>
+            <div class="post">
+                <h3>マカパカブログ 第0章</h3>
+                <p>初めましてとこんにちは</p>
+                <a href="chapter0.html">続きを読む</a>
+            </div>
+            <div class="post">
+                <h3>ドル資産を保有しろ！</h3>
+                <p>chapter1 : 世は大円安時代</p>
+                <a href="chapter1.html">続きを読む</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-include"></footer>
+
+    <script>
+        async function includeHTML() {
+            const header = await fetch('header.html').then(response => response.text());
+            document.getElementById('header-include').innerHTML = header;
+
+            const footer = await fetch('footer.html').then(response => response.text());
+            document.getElementById('footer-include').innerHTML = footer;
+        }
+
+        includeHTML();
+    </script>
+    <!-- AOSのCSS（CDN経由） -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- AOSのJavaScript（CDN経由） -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();  // AOSの初期化
+    </script>
+    <style>
+        header {
+            position: static;
+            /* または relative */
+        }
     </style>
+</body>
+
 </html>

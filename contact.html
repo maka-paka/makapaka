@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>makapaka Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="blue_flame_favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="blue_flame_favicon.png">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>
-                <a href="index.html" class="site-title">makapaka Blog</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="#about">プロフィール</a></li>
-                    <li><a href="#blog">ブログ</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="blue_flame_favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="blue_flame_favicon.png" />
+  </head>
+  <body>
+    <header id="header-include"></header>
 
     <section class="hero" id="home">
-        <div class="container">
-            <h2>漢の情報発信</h2>
-            <p>Welcome to makapaka blog!</p>
-        </div>
+      <div class="container">
+        <h2>漢の情報発信</h2>
+        <p>Welcome to makapaka blog!</p>
+      </div>
     </section>
 
     <section class="post" id="blog">
-        <div class="container">
-            <h1 class="contact-heading">contact</h1>
-            <p class="email">
-                E-mail : <a href="mailto:makapaka.saga@gmail.com">makapaka.saga@gmail.com</a>
-            </p>
-        </div>
+      <div class="container">
+        <h1 class="contact-heading">contact</h1>
+        <p class="email">
+          E-mail :
+          <a href="mailto:makapaka.saga@gmail.com">makapaka.saga@gmail.com</a>
+        </p>
+      </div>
     </section>
 
     <section class="posts" id="blog">
-        <div class="container">
-            <h2 data-aos="fade-right">new posts</h2>
-            <div class="post">
-                <h3>マカパカブログ 第0章</h3>
-                <p>初めましてとこんにちは</p>
-                <a href="chapter0.html">続きを読む</a>
-            </div>
-            <div class="post">
-                <h3>ドル資産を保有しろ！</h3>
-                <p>chapter1 : 世は大円安時代</p>
-                <a href="chapter1.html">続きを読む</a>
-            </div>
+      <div class="container">
+        <h2 data-aos="fade-right">new posts</h2>
+        <div class="post">
+          <h3>マカパカブログ 第0章</h3>
+          <p>初めましてとこんにちは</p>
+          <a href="chapter0.html">続きを読む</a>
         </div>
+        <div class="post">
+          <h3>ドル資産を保有しろ！</h3>
+          <p>chapter1 : 世は大円安時代</p>
+          <a href="chapter1.html">続きを読む</a>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 makapakaブログ. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
-<!-- AOSのCSS（CDN経由） -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-<!-- AOSのJavaScript（CDN経由） -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init();  // AOSの初期化
-</script>
-<style>
-    header {
+    <footer id="footer-include"></footer>
+
+    <script>
+      async function includeHTML() {
+        const header = await fetch("header.html").then((response) =>
+          response.text()
+        );
+        document.getElementById("header-include").innerHTML = header;
+
+        const footer = await fetch("footer.html").then((response) =>
+          response.text()
+        );
+        document.getElementById("footer-include").innerHTML = footer;
+      }
+
+      includeHTML();
+    </script>
+    <!-- AOSのCSS（CDN経由） -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- AOSのJavaScript（CDN経由） -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init(); // AOSの初期化
+    </script>
+    <style>
+      header {
         position: static; /* または relative */
-    }
+      }
     </style>
+  </body>
 </html>
