@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>makapaka Blog</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="blue_flame_favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="blue_flame_favicon.png" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- test -->
     <header id="header-include"></header>
 
     <section class="hero" id="home">
-      <div class="container">
-        <h2>漢の情報発信</h2>
-        <p>Welcome to makapaka blog!</p>
-      </div>
+        <div class="container">
+            <h2>漢の情報発信</h2>
+            <p>Welcome to makapaka blog!</p>
+        </div>
     </section>
 
     <section class="posts" id="blog">
-      <div class="container">
-        <h2 data-aos="fade-right">new posts</h2>
-        <div class="post">
-          <h3>マカパカブログ 第0章</h3>
-          <p>chapter0 : 初めましてとこんにちは</p>
-          <a href="chapter0.html">続きを読む</a>
+        <div class="container">
+            <h2 data-aos="fade-right">new posts</h2>
+            <div class="post">
+                <h3>マカパカブログ 第0章</h3>
+                <p>chapter0 : 初めましてとこんにちは</p>
+                <a href="chapter0.html">続きを読む</a>
+            </div>
+            <div class="post">
+                <h3>ドル資産を保有しろ！</h3>
+                <p>chapter1 : 世は大円安時代</p>
+                <a href="chapter1.html">続きを読む</a>
+            </div>
         </div>
-        <div class="post">
-          <h3>ドル資産を保有しろ！</h3>
-          <p>chapter1 : 世は大円安時代</p>
-          <a href="chapter1.html">続きを読む</a>
-        </div>
-      </div>
     </section>
+    <!-- 広告ユニット -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2843022167162616" data-ad-slot="1234567890"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843022167162616"
+        crossorigin="anonymous"></script>
 
     <footer id="footer-include"></footer>
 
     <script>
-      async function includeHTML() {
-        const header = await fetch("header.html").then((response) =>
-          response.text()
-        );
-        document.getElementById("header-include").innerHTML = header;
+        async function includeHTML() {
+            const header = await fetch("header.html").then((response) =>
+                response.text()
+            );
+            document.getElementById("header-include").innerHTML = header;
 
-        const footer = await fetch("footer.html").then((response) =>
-          response.text()
-        );
-        document.getElementById("footer-include").innerHTML = footer;
-      }
+            const footer = await fetch("footer.html").then((response) =>
+                response.text()
+            );
+            document.getElementById("footer-include").innerHTML = footer;
+        }
 
-      includeHTML();
+        includeHTML();
     </script>
     <!-- AOSのCSS（CDN経由） -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- AOSのJavaScript（CDN経由） -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-      AOS.init(); // AOSの初期化
+        AOS.init(); // AOSの初期化
     </script>
     <style>
-      header {
-        position: static; /* または relative */
-      }
+        header {
+            position: static;
+            /* または relative */
+        }
     </style>
-  </body>
+</body>
+
 </html>
